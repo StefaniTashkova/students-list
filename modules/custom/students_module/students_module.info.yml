@@ -1,0 +1,6 @@
+name: Students Module
+type: module
+description: 'Allow users to search for information about students'
+package: Custom
+version: 1.0
+core_version_requirement: ^9 || 10

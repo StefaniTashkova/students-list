@@ -1,0 +1,9 @@
+name: Students
+type: theme
+description: This is a students sub theme of Stable
+core_version_requirement: ^8 || ^9 || ^10
+# Defines the base theme
+base theme: stable
+# Defines libraries group in which we can add css/js.
+#libraries:
+#  - students/student-form

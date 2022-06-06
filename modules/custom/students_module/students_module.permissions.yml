@@ -1,0 +1,11 @@
+access students content:
+  title: 'Access students content'
+  description: 'Access student information (name, faculty number, gender) in students tab.'
+
+edit students content:
+  title: 'Edit students content'
+  description: 'Add new student or edit student details'
+
+delete students content:
+  title: 'Delete students content'
+  description: 'Delete student record'

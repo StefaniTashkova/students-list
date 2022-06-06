@@ -1,0 +1,25 @@
+students_module.students_list:
+  path: /students
+  defaults:
+    _controller: Drupal\students_module\Controller\StudentsController::showStudents
+    _title: 'Students Records'
+  requirements:
+    _permission: 'access students content'
+
+students_module.students_form:
+  path: /students/form/data
+  defaults:
+    _form: Drupal\students_module\Form\StudentForm
+    _title: 'Add / Edit Students'
+  requirements:
+    _permission: 'edit students content'
+
+students_module.delete_student:
+  path: /students/delete/{id}
+  defaults:
+    _controller: Drupal\students_module\Controller\StudentsController::deleteStudent
+    _title: 'Delete Student Record'
+  requirements:
+    _permission: 'delete students content'
+
+

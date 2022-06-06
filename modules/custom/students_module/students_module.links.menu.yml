@@ -1,0 +1,14 @@
+students_module.studentsList:
+  title: 'Students'
+  description: 'Link to the students page'
+  route_name: students_module.students_list
+  weight: 8
+  menu_name: main
+
+students_module.studentsAddEdit:
+  title: 'Add / Edit Student'
+  description: 'Link to the add students page'
+  route_name: students_module.students_form
+  weight: 10
+  menu_name: main
+

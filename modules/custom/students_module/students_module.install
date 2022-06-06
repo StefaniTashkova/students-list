@@ -1,0 +1,44 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function students_module_schema(): array {
+  $schema['students_data'] = array(
+    'description' => 'Stores module data as key/value pairs per student.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The {students}.id this record affects.',
+        'type' => 'serial',
+        'not null' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'The name of the student.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'gender' => array(
+        'description' => 'The gender of the student.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'faculty_number' => array(
+        'description' => 'The faculty number of the student.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}
+
+
+
