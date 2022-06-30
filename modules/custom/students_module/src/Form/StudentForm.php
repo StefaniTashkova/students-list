@@ -14,7 +14,7 @@ class StudentForm extends FormBase {
 
 
   public function getFormId() {
-    return 'student_form';
+    return 'students_add_form';
   }
 
   public function buildForm(array $form, FormStateInterface $form_state) {
